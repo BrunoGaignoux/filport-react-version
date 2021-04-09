@@ -7,7 +7,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import SplashScreen from './src/views/Splash';
 import LoginScreen from './src/views/Login';
-import DrawerNavigationRoutes from './src/views/DrawerNavigationRoutes';
+import NavigationRoutes from './src/views/NavigationRoutes';
 
 const Stack = createStackNavigator();
 
@@ -38,8 +38,8 @@ const App = () => {
                     options={{headerShown: false}}
                 />
                 <Stack.Screen
-                    name="DrawerNavigationRoutes"
-                    component={DrawerNavigationRoutes}
+                    name="NavigationRoutes"
+                    component={NavigationRoutes}
                     options={{headerShown: false}}
                 />
             </Stack.Navigator>

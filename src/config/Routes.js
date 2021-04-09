@@ -4,13 +4,20 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import Home from '../views/Home';
 import Report from '../views/Report';
+import MyReports from "../views/MyReports";
 
 const Routes = createStackNavigator(
     {
         Home: {
             screen: Home,
             navigationOptions: {
-                headerTitle: 'Home'
+                headerTitle: 'Painel de Controle'
+            }
+        },
+        MyReports: {
+            screen: MyReports,
+            navigationOptions: {
+                headerTitle: 'Meus Relatórios'
             }
         },
         Report: {

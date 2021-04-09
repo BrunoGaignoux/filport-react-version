@@ -3,12 +3,14 @@ import { createAppContainer } from 'react-navigation';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 
 import Home from '../views/Home';
+import MyReports from '../views/MyReports';
 import Report from '../views/Report';
 
 const Menu = createDrawerNavigator(
     {
         Home,
-        "Criar Relatório": Report,
+        MyReports,
+        Report,
     }
 );
 

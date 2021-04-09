@@ -46,7 +46,7 @@ const Login = ({navigation}) => {
                 if (responseJson.success) {
                     AsyncStorage.setItem('user', JSON.stringify(responseJson.user));
                     AsyncStorage.setItem('session', JSON.stringify(responseJson.session));
-                    navigation.replace('DrawerNavigationRoutes');
+                    navigation.replace('NavigationRoutes');
                 } else {
                     setErrors("Erro ao logar: " + responseJson.message);
                 }
@@ -88,8 +88,7 @@ const Login = ({navigation}) => {
                                     setErrors('');
                                     setUserDocument(formatted);
                                     console.log(extracted);
-                                }
-                                }
+                                }}
                                 mask={"[000].[000].[000]-[00]"}
                                 placeholder="Digite seu cpf"
                                 placeholderTextColor="#aaaaaa"
