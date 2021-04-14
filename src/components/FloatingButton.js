@@ -1,17 +1,22 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-import { Icon, Fab } from 'native-base';
+import {StyleSheet} from 'react-native';
+import {Icon, Fab} from 'native-base';
 
-const FloatingButton = ({ actionOnPress }) => (
-    <Fab direction='up' style={styles.button} position='bottomRight' onPress={actionOnPress}>
-        <Icon name='ios-add' />
-    </Fab>
-)
+const FloatingButton = ({actionOnPress}) => (
+  <Fab
+    direction="up"
+    style={styles.button}
+    position="bottomRight"
+    onPress={actionOnPress}
+  >
+    <Icon name="ios-add" />
+  </Fab>
+);
 
 export default FloatingButton;
 
 const styles = StyleSheet.create({
-    button: {
-        backgroundColor: '#800080'
-    }
-})
+  button: {
+    backgroundColor: '#800080',
+  },
+});
