@@ -1,26 +1,32 @@
-import {StyleSheet} from "react-native";
+import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-    profileHeader: {
-        flexDirection: 'row',
-        backgroundColor: '#800080',
-        padding: 15,
-        textAlign: 'center',
-    },
-    profileHeaderPicCircle: {
-        width: 60,
-        height: 60,
-        borderRadius: 60 / 2,
-        color: 'white',
-        backgroundColor: '#ffffff',
-        textAlign: 'center',
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    profileHeaderText: {
-        color: 'white',
-        alignSelf: 'center',
-        paddingHorizontal: 10,
-        fontWeight: 'bold',
-    },
+  profileHeader: {
+    flexDirection: 'row',
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingTop: 25,
+    width: '100%',
+    justifyContent: 'space-between',
+  },
+  profileColumn: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  profileHeaderPicCircle: {
+    width: 60,
+    height: 60,
+    borderRadius: 60 / 2,
+    color: '#333333',
+    backgroundColor: '#e3e3e3',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  profileHeaderText: {
+    color: '#444444',
+    alignSelf: 'center',
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
 });

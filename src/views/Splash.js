@@ -11,7 +11,7 @@ const SplashScreen = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
       setAnimating(false);
-      AsyncStorage.getItem('session').then((value) =>
+      AsyncStorage.getItem('@session').then((value) =>
         navigation.replace(value === null ? 'Auth' : 'NavigationRoutes'),
       );
     }, 3000);

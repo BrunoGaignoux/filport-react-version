@@ -1,21 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import {Text, View} from 'react-native';
 import userInfo from '../assets/styles/userInfo';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-function getUserData(key) {
+const SidebarUserInfo = () => {
   const [letter, setLetter] = useState('?');
   const [nickname, setNickname] = useState('?');
 
-  const user = AsyncStorage.getItem(key);
-
-  useEffect(function readData() {
+  useEffect(async function readData() {
     try {
-      if (
-        typeof user !== 'undefined' &&
-        user !== null &&
-        typeof user === 'string'
-      ) {
+      const user = await AsyncStorage.getItem('@user');
+
+      if (user) {
         const obj = JSON.parse(user);
         const arrName = obj.name.split(' ');
         const surname = arrName.length ? arrName[arrName.length - 1] : null;
@@ -25,25 +22,23 @@ function getUserData(key) {
     } catch (e) {
       alert('Failed to fetch the data from storage');
     }
-  });
-
-  return {
-    letter,
-    nickname,
-  };
-}
-
-const SidebarUserInfo = () => {
-  const user = getUserData('user');
+  }, []);
 
   return (
     <View style={stylesSidebar.profileHeader}>
-      <View style={stylesSidebar.profileHeaderPicCircle}>
-        <Text style={{fontSize: 25, color: '#800080'}}>{user.letter}</Text>
+      <View style={stylesSidebar.profileColumn}>
+        <View style={stylesSidebar.profileHeaderPicCircle}>
+          <Text style={{fontSize: 25, color: '#800080'}}>{letter}</Text>
+        </View>
       </View>
-      <Text style={stylesSidebar.profileHeaderText}>
-        {'Olá ' + user.nickname + ', seja bem vindo'}
-      </Text>
+      <View style={stylesSidebar.profileColumn}>
+        <Text style={stylesSidebar.profileHeaderText}>
+          {'Olá ' + nickname + ', seja bem vindo'}
+        </Text>
+      </View>
+      <View style={stylesSidebar.profileColumn}>
+        <Icon name='refresh' size={35} color="#800080" />
+      </View>
     </View>
   );
 };

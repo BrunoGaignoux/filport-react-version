@@ -92,20 +92,20 @@ const MyReports = ({navigation}) => {
             data={items}
             keyExtractor={(item, index) => item + index}
             renderItem={({item}) => (
-              <Card>
-                <CardItem>
+              <Card style={cardStyle.style}>
+                <CardItem style={cardStyle.item}>
                   <Left style={{flex: 0.8}}>
                     <TouchableOpacity>
-                      <Icon name="edit" size={20} color="#800080" />
+                      <Icon name="edit" size={30} color="#fff" />
                     </TouchableOpacity>
                   </Left>
                   <Right style={{flex: 0.2}}>
                     <TouchableOpacity>
-                      <Icon name="done" size={25} color="#800080" />
+                      <Icon name="done" size={35} color="#fff" />
                     </TouchableOpacity>
                   </Right>
                 </CardItem>
-                <CardItem>
+                <CardItem style={cardStyle.item}>
                   <Left style={{flex: 0.8, marginTop: 0}}>
                     <Body>
                       <Text style={cardStyle.title}>
@@ -117,7 +117,7 @@ const MyReports = ({navigation}) => {
                     </Body>
                   </Left>
                 </CardItem>
-                <CardItem content>
+                <CardItem content style={cardStyle.item}>
                   <Text style={cardStyle.content} numberOfLines={4}>
                     {item.description}
                   </Text>

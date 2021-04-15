@@ -2,22 +2,36 @@ import React from 'react';
 import {View, SafeAreaView} from 'react-native';
 import DashCard from '../components/DashCard';
 import home from '../assets/styles/home';
+import SidebarUserInfo from '../components/SidebarUserInfo';
 
 const Home = ({navigation}) => {
-  const cardTitle1 = 'Relatórios não finalizados';
-  const cardTitle2 = 'Relatórios finalizados';
-  const cardTitle3 = 'Total de Relatórios';
-  const cardTitle4 = 'Ordem de Serviços abertas';
-
   return (
     <SafeAreaView style={dashboard.container}>
-      <View style={dashboard.viewArea}>
-        <DashCard description={cardTitle1} />
-        <DashCard description={cardTitle2} />
+      <View style={{flexDirection: 'column'}}>
+        <View style={dashboard.viewArea}>
+          <SidebarUserInfo />
+        </View>
       </View>
-      <View style={dashboard.viewArea}>
-        <DashCard description={cardTitle3} />
-        <DashCard description={cardTitle4} />
+      <View style={dashboard.viewLine}>
+        <View style={dashboard.lineStyle} />
+      </View>
+      <View style={{flexDirection: 'column'}}>
+        <View style={dashboard.viewArea}>
+          <DashCard
+            iconName='assignment-late'
+            description='Relatórios não finalizados' />
+          <DashCard
+            iconName='assignment-turned-in'
+            description='Relatórios finalizados' />
+        </View>
+        <View style={dashboard.viewArea}>
+          <DashCard
+            iconName='assignment'
+            description='Total de Relatórios' />
+          <DashCard
+            iconName='event-note'
+            description='Ordem de Serviços abertas' />
+        </View>
       </View>
     </SafeAreaView>
   );

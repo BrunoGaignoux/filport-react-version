@@ -1,5 +1,5 @@
 {
   "name": "filport",
   "displayName": "filport",
-  "apiUri": "http://31.220.52.232:9652/api/app"
+  "apiUri": "http://10.0.2.2:9652/api/app"
 }

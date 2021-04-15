@@ -106,3 +106,6 @@ dist
 # Idea's
 .idea/
 .vscode/
+
+# build files for android
+android/app/build/

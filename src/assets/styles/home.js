@@ -16,12 +16,19 @@ export default StyleSheet.create({
   subtitle: {
     fontSize: 12,
   },
-  viewList: {
-    flex: 1,
-    marginTop: 10,
-  },
   viewArea: {
-    flex: 1,
-    padding: 16,
+    flexDirection: 'row',
+    padding: 5,
+  },
+  viewLine: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  lineStyle: {
+    borderWidth: 0.5,
+    marginTop: 20,
+    marginBottom: 20,
+    borderColor: '#333333',
+    width: '50%',
   },
 });

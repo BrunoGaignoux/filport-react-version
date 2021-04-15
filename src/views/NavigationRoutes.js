@@ -1,3 +1,6 @@
+/* eslint-disable react/display-name */
+/* eslint-disable require-jsdoc */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -87,7 +90,7 @@ const NavigationRoutes = () => {
         tabBarIcon: ({focused, color, size}) => {
           let iconName;
 
-          if (route.name === 'Dashboard') {
+          if (route.name === 'Painel de Controle') {
             iconName = focused ? 'graphic-eq' : 'dashboard';
           } else if (route.name === 'Meus Relatórios') {
             iconName = focused ? 'folder-open' : 'folder';
@@ -99,11 +102,16 @@ const NavigationRoutes = () => {
         },
       })}
       tabBarOptions={{
-        activeTintColor: '#800080',
-        inactiveTintColor: 'gray',
+        activeTintColor: '#fff',
+        inactiveTintColor: '#bbbbbb',
+        style: {
+          backgroundColor: '#800080',
+          paddingBottom: 5,
+          height: 60,
+        },
       }}
     >
-      <Tab.Screen name="Dashboard" component={HomeStackScreen} />
+      <Tab.Screen name="Painel de Controle" component={HomeStackScreen} />
       <Tab.Screen name="Meus Relatórios" component={MyReportsStackScreen} />
       <Tab.Screen name="Criar Relatório" component={ReportStackScreen} />
     </Tab.Navigator>

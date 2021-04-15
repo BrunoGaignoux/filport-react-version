@@ -44,8 +44,9 @@ const Login = ({navigation}) => {
         .then((responseJson) => {
           setLoading(false);
           if (responseJson.success) {
-            AsyncStorage.setItem('user', JSON.stringify(responseJson.user));
-            AsyncStorage.setItem('session', JSON.stringify(responseJson.session));
+            AsyncStorage.setItem('@user', JSON.stringify(responseJson.user));
+            AsyncStorage.setItem('@session', JSON.stringify(responseJson.session));
+            AsyncStorage.setItem('@os', JSON.stringify(responseJson.osList));
             navigation.replace('NavigationRoutes');
           } else {
             setErrors('Erro ao logar: ' + responseJson.message);

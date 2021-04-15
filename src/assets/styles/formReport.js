@@ -1,10 +1,71 @@
-import {StyleSheet} from "react-native";
+import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-    input: {
-        height: 40,
-        width: 320,
-        margin: 12,
-        borderWidth: 1,
-    },
-})
+  textarea: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    textAlignVertical: 'top',
+    color: '#333333',
+    height: 350,
+    fontSize: 18,
+    paddingLeft: 15,
+    paddingRight: 15,
+    borderWidth: 2,
+    borderRadius: 3,
+    borderColor: '#e3e3e3',
+    shadowColor: '#dadae8',
+    shadowOpacity: 2,
+    backgroundColor: '#fff',
+  },
+  viewArea: {
+    flexDirection: 'column',
+  },
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+    padding: 10,
+  },
+  card: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    backgroundColor: 'transparent',
+    width: '100%',
+    padding: 10,
+    shadowColor: 'transparent',
+    borderWidth: 1,
+    borderRadius: 1,
+    borderStyle: 'dashed',
+    borderColor: '#555555',
+  },
+  cardItem: {
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+    backgroundColor: 'transparent',
+  },
+  buttonIcon: {
+    padding: 15,
+    borderWidth: 1,
+    borderRadius: 3,
+    borderColor: '#800080',
+  },
+  buttons: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    backgroundColor: '#800080',
+    padding: 10,
+    width: 150,
+    height: 50,
+    borderRadius: 3,
+  },
+  buttonTextStyle: {
+    color: '#FFFFFF',
+    fontSize: 16,
+  },
+  preview: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+});

@@ -18,7 +18,7 @@ const NavigationHeader = (props) => {
           {
             text: 'Confirmar',
             onPress: () => {
-              AsyncStorage.removeItem('session');
+              AsyncStorage.removeItem('@session');
               props.navigation.replace('Auth');
             },
           },
