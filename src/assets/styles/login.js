@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   mainBody: {
@@ -15,6 +15,18 @@ export default StyleSheet.create({
     marginRight: 35,
     margin: 10,
   },
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 10,
+    marginTop: 5,
+    marginLeft: 25,
+    marginRight: 25,
+  },
+  column: {
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+  },
   buttonStyle: {
     backgroundColor: '#800080',
     borderWidth: 0,
@@ -25,12 +37,12 @@ export default StyleSheet.create({
     borderRadius: 3,
     marginLeft: 35,
     marginRight: 35,
-    marginTop: 20,
+    marginTop: 5,
     marginBottom: 25,
   },
   buttonTextStyle: {
     color: '#FFFFFF',
-    paddingVertical: 12,
+    paddingVertical: 14,
     fontSize: 18,
   },
   buttonSaleStyle: {
@@ -59,6 +71,22 @@ export default StyleSheet.create({
     marginLeft: 35,
     marginRight: 35,
     marginBottom: 25,
+  },
+  buttons: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    backgroundColor: 'transparent',
+    padding: 10,
+    width: 150,
+    height: 50,
+    borderRadius: 3,
+    borderColor: '#800080',
+    borderWidth: 1,
+  },
+  buttonsTextStyle: {
+    color: '#800080',
+    fontSize: 18,
   },
   inputStyle: {
     flex: 1,

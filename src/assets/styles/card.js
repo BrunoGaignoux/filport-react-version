@@ -7,22 +7,22 @@ export default StyleSheet.create({
     paddingTop: 0,
     paddingBottom: 5,
     textAlign: 'justify',
-    color: '#fff',
+    color: '#800080',
   },
   style: {
-    backgroundColor: 'rgba(131,59,127,0.78)',
+    backgroundColor: '#fff',
   },
   item: {
-    backgroundColor: 'rgba(131,59,127,0.78)',
+    backgroundColor: '#fff',
   },
   title: {
     fontWeight: 'bold',
-    color: '#fff',
+    color: '#800080',
     fontSize: 15,
   },
   subtitle: {
     fontSize: 12,
-    color: '#fff',
+    color: '#800080',
   },
   viewList: {
     flex: 1,
@@ -31,5 +31,11 @@ export default StyleSheet.create({
   viewArea: {
     flex: 1,
     padding: 16,
+  },
+  buttonAction: {
+    padding: 5,
+    borderWidth: 1,
+    borderRadius: 3,
+    borderColor: '#800080',
   },
 });

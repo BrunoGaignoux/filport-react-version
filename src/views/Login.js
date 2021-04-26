@@ -8,6 +8,7 @@ import {
   KeyboardAvoidingView,
 } from 'react-native';
 import TextInputMask from 'react-native-text-input-mask';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -45,7 +46,14 @@ const Login = ({navigation}) => {
           setLoading(false);
           if (responseJson.success) {
             AsyncStorage.setItem('@user', JSON.stringify(responseJson.user));
-            AsyncStorage.setItem('@session', JSON.stringify(responseJson.session));
+            AsyncStorage.setItem(
+                '@session',
+                JSON.stringify(responseJson.session),
+            );
+            AsyncStorage.setItem(
+                '@reports',
+                JSON.stringify(responseJson.reports),
+            );
             AsyncStorage.setItem('@os', JSON.stringify(responseJson.osList));
             navigation.replace('NavigationRoutes');
           } else {
@@ -76,7 +84,6 @@ const Login = ({navigation}) => {
               <Image
                 source={require('../assets/img/logo.png')}
                 style={{
-                  width: '50%',
                   height: 120,
                   resizeMode: 'contain',
                   margin: 30,
@@ -104,22 +111,28 @@ const Login = ({navigation}) => {
             {errors !== '' ? (
               <Text style={styles.errorTextStyle}>{errors}</Text>
             ) : null}
-            {/* <View style={styles.SectionStyle}>
-              <TouchableOpacity
-                style={styles.buttonSaleStyle}
-                activeOpacity={0.5}
-                onPress={handleSubmitPress}
-              >
-                <Text style={styles.buttonTextStyle}>Vendas</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={styles.buttonReportStyle}
-                activeOpacity={0.5}
-                onPress={handleSubmitPress}
-              >
-                <Text style={styles.buttonTextStyle}>Relatórios</Text>
-              </TouchableOpacity>
-            </View> */}
+            <View style={styles.row}>
+              <View style={styles.column}>
+                <TouchableOpacity
+                  style={styles.buttons}
+                  activeOpacity={0.5}
+                  disabled={true}
+                >
+                  <Icon name="trending-down" size={20} color="#800080" />
+                  <Text style={styles.buttonsTextStyle}>Vendas</Text>
+                </TouchableOpacity>
+              </View>
+              <View style={styles.column}>
+                <TouchableOpacity
+                  style={styles.buttons}
+                  activeOpacity={0.5}
+                  disabled={true}
+                >
+                  <Icon name="assignment" size={20} color="#800080" />
+                  <Text style={styles.buttonsTextStyle}>Relatórios</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
             <TouchableOpacity
               style={styles.buttonStyle}
               activeOpacity={0.5}
