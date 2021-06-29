@@ -17,6 +17,8 @@ import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import com.reactnativecommunity.picker.RNCPickerPackage;
 // react-native-camera
 import org.reactnative.camera.RNCameraPackage;
+// react-native-extra-dimensions-android
+import ca.jaysoo.extradimensions.ExtraDimensionsPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-reanimated
@@ -77,6 +79,7 @@ public class PackageList {
       new AsyncStoragePackage(),
       new RNCPickerPackage(),
       new RNCameraPackage(),
+      new ExtraDimensionsPackage(),
       new RNGestureHandlerPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),

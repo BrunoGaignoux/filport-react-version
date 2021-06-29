@@ -10,7 +10,7 @@ class EmptyList extends Component {
   static defaultProps = {
     style: {
       fontWeight: 'bold',
-      color: '#800080',
+      color: '#b987e1',
       fontSize: 17,
     },
   };

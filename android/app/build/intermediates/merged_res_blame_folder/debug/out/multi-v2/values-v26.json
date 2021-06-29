@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bruno/Desenvolvimento/ssm/app-react-version/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
+            "outputFile": "C:\\Users\\bruno\\OneDrive\\Documentos\\Desenvolvimento\\Ux Software\\ssm\\filport-react-version\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "/home/bruno/.gradle/caches/transforms-2/files-2.1/d14dbad7340cad958a2e361a440b498d/appcompat-1.1.0/res/values-v26/values-v26.xml",
+                    "source": "C:\\Users\\bruno\\.gradle\\caches\\transforms-2\\files-2.1\\d14dbad7340cad958a2e361a440b498d\\appcompat-1.1.0\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

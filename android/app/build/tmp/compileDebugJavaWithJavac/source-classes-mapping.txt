@@ -1,5 +1,6 @@
-com/facebook/react/PackageList.java
- com.facebook.react.PackageList
+com/filport/MainActivity.java
+ com.filport.MainActivity
+ com.filport.MainActivity$1
 com/filport/MainApplication.java
  com.filport.MainApplication
  com.filport.MainApplication$1
@@ -10,6 +11,5 @@ com/filport/ReactNativeFlipper.java
  com.filport.ReactNativeFlipper$2$1
 com/filport/BuildConfig.java
  com.filport.BuildConfig
-com/filport/MainActivity.java
- com.filport.MainActivity
- com.filport.MainActivity$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
