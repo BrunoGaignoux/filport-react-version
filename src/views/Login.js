@@ -14,7 +14,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import Loader from '../components/Loader';
 import login from '../assets/styles/login';
-import {apiUri as api} from '../../app.json';
+import service from '../services/default';
 
 const Login = ({navigation}) => {
   const [document, setUserDocument] = useState('');
@@ -30,19 +30,8 @@ const Login = ({navigation}) => {
     }
 
     setLoading(true);
-    const dataToSend = {
-      cpf: document,
-    };
 
-    fetch(api + '/login', {
-      method: 'POST',
-      body: JSON.stringify(dataToSend),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-        .then((response) => response.json())
-        .then((responseJson) => {
+    service.login(document).then((responseJson) => {
           setLoading(false);
           if (responseJson.success) {
             AsyncStorage.setItem('@user', JSON.stringify(responseJson.user));
@@ -96,7 +85,6 @@ const Login = ({navigation}) => {
                 onChangeText={(formatted, extracted) => {
                   setErrors('');
                   setUserDocument(formatted);
-                  console.log(extracted);
                 }}
                 mask={'[000].[000].[000]-[00]'}
                 placeholder="Digite seu cpf"

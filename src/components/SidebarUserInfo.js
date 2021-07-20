@@ -28,16 +28,13 @@ const SidebarUserInfo = () => {
     <View style={stylesSidebar.profileHeader}>
       <View style={stylesSidebar.profileColumn}>
         <View style={stylesSidebar.profileHeaderPicCircle}>
-          <Text style={{fontSize: 25, color: '#800080'}}>{letter}</Text>
+          <Text style={{fontSize: 30, color: '#800080'}}>{letter}</Text>
         </View>
       </View>
       <View style={stylesSidebar.profileColumn}>
         <Text style={stylesSidebar.profileHeaderText}>
           {'Olá ' + nickname + ', seja bem vindo'}
         </Text>
-      </View>
-      <View style={stylesSidebar.profileColumn}>
-        <Icon name='refresh' size={35} color="#800080" />
       </View>
     </View>
   );

@@ -12,9 +12,17 @@ import If from '../shared/If';
 import card from '../assets/styles/card';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import EmptyList from '../components/EmptyList';
+import { RippleLoader } from 'react-native-indicator';
 
 const MyReports = ({navigation}) => {
   const [items, setItems] = useState([]);
+  const [loader, setLoader] = useState(false);
+
+  async function commit() {
+    setInterval(() => {
+      setLoader(!loader);
+    }, 2000);
+  }
 
   useEffect(async function getItems() {
     try {
@@ -45,7 +53,7 @@ const MyReports = ({navigation}) => {
                       </TouchableOpacity>
                     </Left>
                     <Right style={{flex: 0.2}}>
-                      <TouchableOpacity style={cardStyle.buttonAction}>
+                      <TouchableOpacity style={cardStyle.buttonAction} onPress={commit}>
                         <Icon name="done" size={25} color="#800080" />
                       </TouchableOpacity>
                     </Right>

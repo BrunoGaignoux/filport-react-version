@@ -44,67 +44,69 @@
 24-->[:react-native-camera] C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalDebug\AndroidManifest.xml:16:9-33
 25
 26    <application
-26-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:10:5-28:19
+26-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:10:5-29:19
 27        android:name="com.filport.MainApplication"
-27-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:11:7-38
+27-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:12:7-38
 28        android:allowBackup="false"
-28-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:15:7-34
+28-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:16:7-34
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 29-->[androidx.core:core:1.1.0] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\d67cd79abd1ca209502f51c69d23182b\core-1.1.0\AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
-31-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:13:7-41
+31-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:14:7-41
 32        android:label="@string/app_name"
-32-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:12:7-39
+32-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:13:7-39
 33        android:networkSecurityConfig="@xml/network_security_config"
-33-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\debug\AndroidManifest.xml:16:9-69
-34        android:roundIcon="@mipmap/ic_launcher_round"
-34-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:14:7-52
-35        android:theme="@style/AppTheme"
-35-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:16:7-38
-36        android:usesCleartextTraffic="true" >
-36-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\debug\AndroidManifest.xml:13:9-44
-37        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-37-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\debug\AndroidManifest.xml:17:9-86
-37-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\debug\AndroidManifest.xml:17:19-83
-38        <activity
-38-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:17:7-27:18
-39            android:name="com.filport.MainActivity"
-39-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:18:9-37
-40            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-40-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:20:9-86
-41            android:label="@string/app_name"
-41-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:19:9-41
-42            android:launchMode="singleTask"
-42-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:21:9-40
-43            android:windowSoftInputMode="adjustResize" >
-43-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:22:9-51
-44            <intent-filter>
-44-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:23:9-26:25
-45                <action android:name="android.intent.action.MAIN" />
-45-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:24:13-65
-45-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:24:21-62
-46
-47                <category android:name="android.intent.category.LAUNCHER" />
-47-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:25:13-73
-47-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:25:23-70
-48            </intent-filter>
-49        </activity>
-50        <activity
-50-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\e3bbb48e9e80f4f9568e8682ac8bd81d\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-51            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-51-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\e3bbb48e9e80f4f9568e8682ac8bd81d\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
-52            android:exported="false"
-52-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\e3bbb48e9e80f4f9568e8682ac8bd81d\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-53            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-53-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\e3bbb48e9e80f4f9568e8682ac8bd81d\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
-54
-55        <meta-data
-55-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\340fa5fbd1ac58a518bb530de54918ed\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
-56            android:name="com.google.android.gms.version"
-56-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\340fa5fbd1ac58a518bb530de54918ed\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
-57            android:value="@integer/google_play_services_version" />
-57-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\340fa5fbd1ac58a518bb530de54918ed\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
-58    </application>
-59
-60</manifest>
+33-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\debug\AndroidManifest.xml:17:9-69
+34        android:requestLegacyExternalStorage="true"
+34-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:11:7-50
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:15:7-52
+36        android:theme="@style/AppTheme"
+36-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:17:7-38
+37        android:usesCleartextTraffic="true" >
+37-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\debug\AndroidManifest.xml:14:9-44
+38        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+38-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\debug\AndroidManifest.xml:18:9-86
+38-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\debug\AndroidManifest.xml:18:19-83
+39        <activity
+39-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:18:7-28:18
+40            android:name="com.filport.MainActivity"
+40-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:19:9-37
+41            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+41-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:21:9-86
+42            android:label="@string/app_name"
+42-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:20:9-41
+43            android:launchMode="singleTask"
+43-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:22:9-40
+44            android:windowSoftInputMode="adjustResize" >
+44-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:23:9-51
+45            <intent-filter>
+45-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:24:9-27:25
+46                <action android:name="android.intent.action.MAIN" />
+46-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:25:13-65
+46-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:25:21-62
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:26:13-73
+48-->C:\Users\bruno\OneDrive\Documentos\Desenvolvimento\Ux Software\ssm\filport-react-version\android\app\src\main\AndroidManifest.xml:26:23-70
+49            </intent-filter>
+50        </activity>
+51        <activity
+51-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\e3bbb48e9e80f4f9568e8682ac8bd81d\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+52            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+52-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\e3bbb48e9e80f4f9568e8682ac8bd81d\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+53            android:exported="false"
+53-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\e3bbb48e9e80f4f9568e8682ac8bd81d\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+54            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+54-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\e3bbb48e9e80f4f9568e8682ac8bd81d\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+55
+56        <meta-data
+56-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\340fa5fbd1ac58a518bb530de54918ed\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
+57            android:name="com.google.android.gms.version"
+57-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\340fa5fbd1ac58a518bb530de54918ed\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
+58            android:value="@integer/google_play_services_version" />
+58-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\bruno\.gradle\caches\transforms-2\files-2.1\340fa5fbd1ac58a518bb530de54918ed\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
+59    </application>
+60
+61</manifest>

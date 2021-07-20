@@ -15,9 +15,9 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   profileHeaderPicCircle: {
-    width: 60,
-    height: 60,
-    borderRadius: 60 / 2,
+    width: 90,
+    height: 90,
+    borderRadius: 90 / 2,
     color: '#333333',
     backgroundColor: '#e3e3e3',
     justifyContent: 'center',
